@@ -1,10 +1,18 @@
 package model;
 
-import java.util.ArrayList;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
+import java.util.ArrayList;
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 public class User {
     private int id;
-    private int phoneNumber;
+    private long phoneNumber;
     private int enterOtp;
-    ArrayList<Event> events = new ArrayList<>();
+    private ArrayList<Event> events = new ArrayList<>();
 }
